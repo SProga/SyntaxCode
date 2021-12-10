@@ -2,6 +2,7 @@ class Features {
 	constructor() {
 		this.overlay = document.querySelector(".overlay");
 		this.overlayShown = false;
+		this.form = document.querySelector(".card__form");
 		this.card = document.querySelector(".card");
 		this.cardBtns = document.querySelectorAll(".card__form__preference");
 		this.registerEvents();
@@ -12,6 +13,9 @@ class Features {
 			btn.addEventListener("click", () => {
 				btn.classList.toggle("card__form__preference-active");
 			});
+		});
+		this.form.addEventListener("submit", (e) => {
+			e.preventDefault();
 		});
 	}
 
