@@ -1,1 +1,152 @@
-/* sass styles will be save here */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body,
+html {
+  height: 100%; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hind Siliguri", sans-serif; }
+
+ul li {
+  list-style-type: none; }
+
+.btn {
+  cursor: pointer; }
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 99999;
+  background-color: rgba(49, 49, 49, 0.904);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in; }
+  .overlay__active {
+    opacity: 1;
+    visibility: visible; }
+
+.text-highlight--dark {
+  font-weight: 700; }
+
+.text-highlight-red {
+  color: red;
+  font-size: 2rem; }
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 115rem;
+  margin-top: 3rem;
+  text-align: center;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100px); }
+  .card__active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition: all 0.7s ease-in; }
+  .card__title {
+    font-size: 3rem;
+    font-weight: 400; }
+  .card__order {
+    word-spacing: 1rem;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+  .card__subtitle {
+    text-transform: uppercase;
+    background-color: #f39f86;
+    background-image: linear-gradient(315deg, #d48b75 0%, #ccb161 74%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2.5rem; }
+  .card__text {
+    font-size: 1.8rem; }
+  .card__content__left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    max-width: 70rem;
+    margin: 0 auto; }
+  .card__content__right {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .card__content__right-cover {
+      display: block;
+      width: 100%;
+      height: 60rem;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .card__form {
+    padding: 0 7rem; }
+    .card__form__choose {
+      font-weight: 600;
+      text-transform: capitalize;
+      font-size: 1.8rem; }
+    .card__form__preferences {
+      margin: 1rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .card__form__preference {
+      background: transparent;
+      border: 1px solid #5c5c5c;
+      font-family: inherit;
+      font-size: 1.4rem;
+      padding: 0.3rem 1.8rem;
+      transition: all 0.2s linear; }
+      .card__form__preference-active {
+        background-color: #5c5c5c;
+        color: #fff; }
+    .card__form__input {
+      width: 100%;
+      padding: 0.5rem 0 0.5rem 0.4rem;
+      font-family: inherit; }
+    .card__form__sla {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      padding-top: 0.8rem; }
+      .card__form__sla__text {
+        font-size: 1.2rem; }
+    .card__form__checkbox {
+      height: 2.4rem;
+      width: 2.4rem;
+      cursor: pointer; }
+    .card__form__sla__text {
+      text-align: left; }
+    .card__form__button {
+      width: 100%;
+      padding: 0.8rem 2rem;
+      margin: 1rem 0;
+      font-size: 2rem;
+      font-family: inherit;
+      background: transparent;
+      border: 1px solid #5c5c5c;
+      transition: all 0.2s linear; }
+      .card__form__button:hover {
+        background-color: #5c5c5c;
+        color: white; }
+
+.disclaimer {
+  font-size: 1.2rem; }

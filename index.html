@@ -4,7 +4,59 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/js/script.js" type="module" defer></script>
+		<title>mailingList Demo</title>
 	</head>
-	<body></body>
+	<body>
+		<main>
+			<div class="overlay">
+
+				<div class="card">
+					<div class="card__content__left">
+					<h1 class="card__title">Quick<span class="text-highlight--dark">Fits</span></h1>
+					<h2 class="card__order">Get your order now</h2>
+					<h2 class="card__subtitle">for and extra 50% off!</h2>
+					<p class="card__text">Just enter a valid Email Address</p>
+					<form action="#" class="card__form">
+						<h2 class="card__form__choose">choose your preference</h2>
+						<div class="card__form__preferences">
+							<button class="btn card__form__preference">Women</button>
+							<button class="btn card__form__preference">Men</button>
+							<button class="btn card__form__preference">Kids</button>
+							<button class="btn card__form__preference">Curvy</button>
+							<button class="btn card__form__preference">Beauty</button>
+						</div>
+						<input
+							type="text"
+							class="card__form__input"
+							placeholder="Email Address"
+						/>
+						<div class="card__form__sla">
+							<input
+								type="checkbox"
+								name="sla"
+								id=""
+								class="card__form__checkbox"
+							/>
+							<p class="card__form__sla__text">
+								Yes! Sign me up to receive Email Notifications from QuickFits with
+								our latest deals ,sales and updates. I agree to QuickFits Terms of
+								Services and <a class="link__privacy" href="#">Privacy Policy</a>
+							</p>
+						</div>
+						<button class="btn card__form__button">Lets Goo!</button>
+						<p class="disclaimer"><span class="text-highlight-red">*</span>Offers can only redeemed by new subscribers.
+							By signing up, you agree to receive recurring marketing emails from QuickFits at the email address you provided when signing up.
+							<a href="#" class="link__terms">Terms and conditions</a>
+						</p>
+				</div>
+				<div class="card__content__right">
+					<img class="card__content__right-cover"src="/images/mailing-list--Desktop.jpeg" alt="">
+				</div>
+				</form>
+			</div>
+		</div>
+		</main>
+	</body>
 </html>
