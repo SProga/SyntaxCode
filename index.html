@@ -11,7 +11,7 @@
 	<body>
 		<div class="overlay">
 			<form action="#" class="form">
-				<h1 class="form__title color">Sign Up</h1>
+				<h1 class="form__title">Sign Up</h1>
 				<h2 class="form__subtitle">
 					Sign up for <strong class="color">5%</strong> discount off all
 					purchases
@@ -24,6 +24,7 @@
 							name="username"
 							id="username"
 							autocomplete="off"
+							aria-label="username text field"
 						/>
 						<svg
 							class="form__group__icon"
@@ -44,6 +45,7 @@
 							name="email"
 							id="email"
 							autocomplete="off"
+							aria-label="email text field"
 						/>
 						<svg
 							class="form__group__icon"
@@ -64,6 +66,7 @@
 							name="password"
 							id="password"
 							autocomplete="off"
+							aria-label="password text field"
 						/>
 						<svg
 							class="form__group__icon"
@@ -83,6 +86,7 @@
 							name="subscribe"
 							id="subscribe"
 							class="form__checkbox"
+							aria-label="newsletter checkbox"
 						/>
 						<p class="form__inline-text">
 							I want to subscribe to the newsletter
@@ -91,9 +95,10 @@
 					<div class="form__inline">
 						<input
 							type="checkbox"
-							name="subscribe"
-							id="subscribe"
+							name="terms"
+							id="terms"
 							class="form__checkbox"
+							aria-label="terms and conditions checkbox"
 						/>
 						<p class="form__inline-text">
 							I agree to the <a href="#">Terms and Conditions</a> of
