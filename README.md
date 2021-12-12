@@ -1,6 +1,6 @@
 # SyntaxCode
 
-# Signup form Demo
+## Signup form Demo
 
 created using CSS, HTML and a few lines of JavaScript .
 
