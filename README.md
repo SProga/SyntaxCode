@@ -1,6 +1,6 @@
 # SyntaxCode
 
-## Signup form Demo
+## Mailing List Signup Form 
 
 created using CSS, HTML and a few lines of JavaScript .
 
