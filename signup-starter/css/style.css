@@ -1,0 +1,37 @@
+@import "./font.css";
+
+:root {
+	--form-height: 48rem;
+	--text-color: #414a4c;
+	--primary-color: #0166ff;
+	--primary-color-darker: #0888ff8f;
+	--secondary-color: #e15283;
+	--light: #fff;
+	--text-color: #777777;
+	--text-color-darker: #333333;
+	--icon-color: #999999;
+	--divider-color: rgb(221, 220, 220);
+}
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+body,
+html {
+	height: 100%;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Lab Grotesque", "Segoe UI", sans-serif;
+}
